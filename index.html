@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Academic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <div class="profile-upload">
+                <img id="profilePic" src="https://ui-avatars.com/api/?name=Student&background=4f46e5&color=fff&size=150&bold=true&length=1" alt="Profile Picture">
+                <label for="profileInput" class="upload-btn">📷 Upload Photo</label>
+                <input type="file" id="profileInput" accept="image/*">
+            </div>
+            <h1 id="studentName">Sayra B. Chu</h1>
+            <p id="studentInfo">BSCS 3B</p>
+        </header>
+
+        <section class="scores-section">
+            <h2>📊 My Scores</h2>
+            <div class="scores-grid">
+                <div class="score-card card-quiz">
+                    <h3>Quiz <span class="limit">(0–100)</span></h3>
+                    <input type="number" id="quizScore" placeholder="Enter score" min="0" max="100">
+                    <div class="file-area">
+                        <label>Upload File / Proof</label>
+                        <input type="file" class="file-upload" data-category="quiz">
+                        <span class="file-name" id="quizFile">-</span>
+                    </div>
+                </div>
+
+                <div class="score-card card-longquiz">
+                    <h3>Long Quiz <span class="limit">(0–100)</span></h3>
+                    <input type="number" id="longQuizScore" placeholder="Enter score" min="0" max="100">
+                    <div class="file-area">
+                        <label>Upload File / Proof</label>
+                        <input type="file" class="file-upload" data-category="longQuiz">
+                        <span class="file-name" id="longQuizFile">-</span>
+                    </div>
+                </div>
+
+                <div class="score-card card-midterm">
+                    <h3>Midterms <span class="limit">(0–100)</span></h3>
+                    <input type="number" id="midtermScore" placeholder="Enter score" min="0" max="100">
+                    <div class="file-area">
+                        <label>Upload File / Proof</label>
+                        <input type="file" class="file-upload" data-category="midterm">
+                        <span class="file-name" id="midtermFile">-</span>
+                    </div>
+                </div>
+
+                <div class="score-card card-final">
+                    <h3>Finals <span class="limit">(0–100)</span></h3>
+                    <input type="number" id="finalScore" placeholder="Enter score" min="0" max="100">
+                    <div class="file-area">
+                        <label>Upload File / Proof</label>
+                        <input type="file" class="file-upload" data-category="final">
+                        <span class="file-name" id="finalFile">-</span>
+                    </div>
+                </div>
+
+                <div class="score-card card-activity">
+                    <h3>Activities <span class="limit">(0–100)</span></h3>
+                    <input type="number" id="activityScore" placeholder="Enter score" min="0" max="100">
+                    <div class="file-area">
+                        <label>Upload File / Proof</label>
+                        <input type="file" class="file-upload" data-category="activity">
+                        <span class="file-name" id="activityFile">-</span>
+                    </div>
+                </div>
+
+                <div class="score-card card-project">
+                    <h3>Projects <span class="limit">(0–100)</span></h3>
+                    <input type="number" id="projectScore" placeholder="Enter score" min="0" max="100">
+                    <div class="file-area">
+                        <label>Upload File / Proof</label>
+                        <input type="file" class="file-upload" data-category="project">
+                        <span class="file-name" id="projectFile">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="saveBtn" class="save-btn">💾 Save All Data</button>
+            <button id="clearBtn" class="clear-btn">🗑️ Clear All Data</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
